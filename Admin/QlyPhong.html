@@ -97,11 +97,44 @@
                         <div class="x_content">
                             <div id="gender" class="btn-group" data-toggle="buttons">
                                 <div class="col-md-3 col-sm-3 ">
-                                    <label class="btn btn-success" data-toggle-class="btn-primary"
-                                        data-toggle-passive-class="btn-default">
-                                        <input type="radio" name="gender" value="male" class="join-btn">
-                                        &nbsp; Thêm phòng &nbsp;
-                                    </label>
+                                    <div>
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#divAddRoom" data-backdrop="static" data-keyboard="false" >add Room</button>
+                                    </div>
+                                    
+                                    <div id = "divAddRoom" class="modal fade" role="dialog" >
+                                        <div class = "modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title">Room Management</h4>
+                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="container" >
+                                                        <div class="form-group col-md-6">
+                                                            <label>Name</label>
+                                                            <textarea class="form-control" ></textarea>
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label>Price</label>
+                                                            <textarea class="form-control" ></textarea>
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label>Status</label>
+                                                            <textarea class="form-control" ></textarea>
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label>Room Type</label>
+                                                            <textarea class="form-control" ></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class = "btn-success">Save</button> &nbsp;
+                                                    <button type="button" data-dismiss="modal" class="btn btn-danger">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
                                 </div>
                                 <div class="col-md-3 col-sm-3 ">
                                     <select class="form-control">

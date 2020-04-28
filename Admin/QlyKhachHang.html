@@ -97,16 +97,53 @@
                         <div class="x_content">
                             <div id="gender" class="btn-group" data-toggle="buttons">
                                 <div class="col-md-6 col-sm-6 ">
-                                    <label class="btn btn-success" data-toggle-class="btn-primary"
-                                        data-toggle-passive-class="btn-default">
-                                        <input type="radio" name="gender" value="male" class="join-btn">
-                                        &nbsp; Thêm khách hàng &nbsp;
-                                    </label>
+                                    <div>
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#divAddRoom" data-backdrop="static" data-keyboard="false" >add Users</button>
+                                    </div>
+                                    
+                                    <div id = "divAddRoom" class="modal fade" role="dialog" >
+                                        <div class = "modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title">Users Management</h4>
+                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="container" >
+                                                        <div class="form-group col-md-6">
+                                                            <label>Name</label>
+                                                            <textarea class="form-control" ></textarea>
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label>Sex</label>
+                                                            <textarea class="form-control" ></textarea>
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label>Email</label>
+                                                            <textarea class="form-control" ></textarea>
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label>Phone</label>
+                                                            <textarea class="form-control" ></textarea>
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label>Address</label>
+                                                            <textarea class="form-control" ></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class = "btn-success">Save</button> &nbsp;
+                                                    <button type="button" data-dismiss="modal" class="btn btn-danger">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
                                 </div>
                                 <div class="col-md-6 col-sm-6 ">
                                     <input type="text" class="form-control" placeholder="Nhập tên khách hàng">
                                 </div>
-                                <div class="col-md-3 col-sm-3 ">
+                                <div class="col-md-6 col-sm-6 ">
                                     <label class="btn btn-primary" data-toggle-class="btn-primary"
                                         data-toggle-passive-class="btn-default">
                                         <input type="radio" name="gender" value="male" class="join-btn">
